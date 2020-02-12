@@ -19,23 +19,23 @@ include blit.inc
 .DATA
 
 	;; If you need to, you can place global variables here
-	
+
 .CODE
 
 DrawPixel PROC x:DWORD, y:DWORD, color:DWORD
-
+  xor eax, eax
 	ret 			; Don't delete this line!!!
 DrawPixel ENDP
 
 BasicBlit PROC ptrBitmap:PTR EECS205BITMAP , xcenter:DWORD, ycenter:DWORD
-
-	ret 			; Don't delete this line!!!	
+  xor eax, eax
+	ret 			; Don't delete this line!!!
 BasicBlit ENDP
 
 
 RotateBlit PROC lpBmp:PTR EECS205BITMAP, xcenter:DWORD, ycenter:DWORD, angle:FXPT
-
-	ret 			; Don't delete this line!!!		
+  xor eax, eax 
+	ret 			; Don't delete this line!!!
 RotateBlit ENDP
 
 
